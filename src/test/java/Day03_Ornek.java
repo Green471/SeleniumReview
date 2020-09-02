@@ -1,4 +1,5 @@
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -41,6 +42,8 @@ public class Day03_Ornek {
         WebElement ilkSuradakiKitap = driver.findElement(By.xpath("(//div[@class='a-section aok-relative s-image-fixed-height'])[1]"));
         ilkSuradakiKitap.click();
         WebElement backTo = driver.findElement(By.xpath("//*[.='Back to results'"));
+        backTo.click();
+
 
 
 
